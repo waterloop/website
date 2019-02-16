@@ -131,6 +131,15 @@ footer .logo {
 
 .team-card {
   padding: 2vh 0;
+  display:inline-block;
+  vertical-align: top;
+  width: 33%;
+}
+
+@media (max-width: 767px) {
+  .team-card {
+    width: 100%;
+  }
 }
 
 .team-number {
@@ -147,7 +156,13 @@ footer .logo {
   font-size: 170%;
   opacity: 1;
   padding: 0 5px;
-  font-weight: 600;
+  font-size: 2em;
+}
+
+@media (max-width: 767px) {
+  .team-header-text {
+    font-size: 1.3em;
+  }
 }
 
 .team-header {
