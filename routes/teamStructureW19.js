@@ -27,6 +27,8 @@ module.exports = {
       "Conrad Masak": "LIM Lead",
       "Shreshth Mehra": "Member",
       "Oscar Manuel Carreno-Molina": "Member",
+      "Joseph Cortes": "Member",
+      "Kaarthic Pulogarajah": "Member",
     },
     "Electrical": {
       "Wazer Rehman": "Electrical Lead",
