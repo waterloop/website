@@ -96,5 +96,6 @@ module.exports = {
     "Jason Pan": "Alum Advisor",
     "Nicholas Jelich": "Alum Advisor",
     "Jimmy Zhou": "Alum Advisor",
+    "Lily Hwang": "Alum Advisor",
   },
 }
