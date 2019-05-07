@@ -5,7 +5,7 @@ const sponsorStructureJSON = require("./sponsorStructure.json");
 const wat_api = require("../api/index");
 const flockJSON = require("./flock.json");
 const downloadsJSON = require("./downloads.json");
-const path = require("path")
+const path = require("path");
 
 router.get("/", (req, res) => {
   wat_api.getMediumPosts((data) => {
@@ -21,7 +21,7 @@ router.get("/", (req, res) => {
 
 // application for web team
 router.get("/webapply", function (req, res) {
-  res.sendFile(path.join(__dirname+"/webapply.html"));
+  res.sendFile(path.join(__dirname + "/webapply.html"));
 });
 
 router.get("/flock", (req, res) => {
@@ -133,6 +133,10 @@ router.get("/contact", (req, res) => {
   });
 });
 
+router.get("/join", (req, res) => {
+  res.redirect("https://wloop.ca/join");
+});
+
 router.get("*", (req, res) => {
   res.render("index", {
     title: "Waterloop – Canada's Hyperloop",
@@ -146,9 +150,9 @@ router.post("/api/submitEmailForm", (req, res) => {
 
   wat_api.sendEmail(req.query, result => {
     if (result) {
-      res.status(200).json({"message": "Email sent successfully"});
+      res.status(200).json({ "message": "Email sent successfully" });
     } else {
-      res.status(500).json({"message": "Error when sending email"});
+      res.status(500).json({ "message": "Error when sending email" });
     }
   });
 
@@ -159,9 +163,9 @@ router.post("/api/submitSlackForm", (req, res) => {
 
   wat_api.sendSlack(req.body, result => {
     if (result) {
-      res.status(200).json({"message": "Slack sent successfully"});
+      res.status(200).json({ "message": "Slack sent successfully" });
     } else {
-      res.status(500).json({"message": "Error when sending message"});
+      res.status(500).json({ "message": "Error when sending message" });
     }
   });
 });
