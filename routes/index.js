@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const teamStructureJSON = require("./teamStructureW19.js");
+const teamStructureJSON = require("./teamStructureS19.js");
 const sponsorStructureJSON = require("./sponsorStructure.json");
 const wat_api = require("../api/index");
 const flockJSON = require("./flock.json");
