@@ -14,7 +14,6 @@ module.exports = {
       "Dasha Korotkova": "Member",
       "Clara Tsai": "Member",
       "Gagan Malik": "Member",
-      "Zhongyuan (Alex) Ruan": "Member",
     },
     "Structures": {
       "Attilio Ravani": "Structures Lead",
@@ -22,16 +21,12 @@ module.exports = {
       "Mike Domm": "Member",
       "Kaitlyn Lee": "Member",
       "Paul Shen": "Member",
-      "Muen Zhang": "Member",
-      "Jonathan Chu": "Offstream Lead",
     },
     "Linear Induction Motor": {
       "Ben Hu": "LIM Lead",
       "Conrad Masak": "LIM Lead",
       "Shreshth Mehra": "Member",
       "Oscar Manuel Carreno-Molina": "Member",
-      "Joseph Cortes": "Member",
-      "Kaarthic Pulogarajah": "Member",
     },
     "Electrical": {
       "Wazer Rehman": "Electrical Lead",
@@ -43,7 +38,6 @@ module.exports = {
       "Clayton Sockabasin": "Member",
       "Sumaiya Islam": "Member",
       "Nick Yu": "Member",
-      "Jasman Singh Sahi": "Member",
     },
     "Software": {
       "Deep Dhillon": "Software Lead",
@@ -57,7 +51,6 @@ module.exports = {
       "Priyanka Hariharan": "Member",
       "Steven Feng": "Member",
       "Vishesh Gupta": "Member",
-      "Ambareesh Balaji": "Member",
     },
   },
   "Admin": {
@@ -68,7 +61,6 @@ module.exports = {
       "Irina Chubarova": "Member",
       "Jared Wou": "Member",
       "Kevin Tang": "Member",
-      "Gregory Cotton": "Member",
     },
     "Sponsorship": {
       "Soham Suvarnkar": "Sponsorship Lead",
@@ -102,6 +94,5 @@ module.exports = {
     "Jason Pan": "Alum Advisor",
     "Nicholas Jelich": "Alum Advisor",
     "Jimmy Zhou": "Alum Advisor",
-    "Lily Hwang": "Alum Advisor",
   },
 }
