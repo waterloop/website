@@ -103,7 +103,9 @@ module.exports = {
       "George Yuan": "",
       "Banin Abrar": "",
       "Vishesh Gupta": "",
-      "Lyka Pinlac": ""
+      "Lyka Pinlac": "",
+      "Tirth Patel": "",
+      "Michaela Valiquette": ""
     }
   },
   Admin: {
