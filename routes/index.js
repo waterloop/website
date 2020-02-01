@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const teamStructureJSON = require("./teamStructureS19.js");
+const teamStructureJSON = require("./teamStructureW20.js");
 const sponsorStructureJSON = require("./sponsorStructure.json");
 const wat_api = require("../api/index");
 const flockJSON = require("./flock.json");
@@ -8,19 +8,19 @@ const downloadsJSON = require("./downloads.json");
 const path = require("path");
 
 router.get("/", (req, res) => {
-  wat_api.getMediumPosts((data) => {
+  wat_api.getMediumPosts(data => {
     res.render("index", {
       title: "Waterloop – Canada's Hyperloop",
       pageName: "home",
       pageParams: {
-        blog: data,
-      },
+        blog: data
+      }
     });
   });
 });
 
 // application for web team
-router.get("/webapply", function (req, res) {
+router.get("/webapply", function(req, res) {
   res.sendFile(path.join(__dirname + "/webapply.html"));
 });
 
@@ -29,7 +29,7 @@ router.get("/flock", (req, res) => {
     title: "Waterloop – Flock",
     pageName: "flock",
     pageParams: {
-      flock: flockJSON,
+      flock: flockJSON
     }
   });
 });
@@ -41,7 +41,7 @@ for (const item of flockJSON) {
       title: "Waterloop – " + item.name,
       pageName: "goose",
       pageParams: {
-        goose: item,
+        goose: item
       }
     });
   });
@@ -52,7 +52,7 @@ router.get("/downloads", (req, res) => {
     title: "Waterloop – Downloads",
     pageName: "downloads",
     pageParams: {
-      dl: downloadsJSON,
+      dl: downloadsJSON
     }
   });
 });
@@ -60,7 +60,7 @@ router.get("/downloads", (req, res) => {
 let tweetList;
 const instaSortedData = {
   video: [],
-  image: [],
+  image: []
 };
 
 wat_api.getTweeterPosts(curTweetList => {
@@ -82,8 +82,8 @@ router.get("/media", (req, res) => {
     pageName: "media",
     pageParams: {
       tweets: tweetList,
-      instas: instaSortedData,
-    },
+      instas: instaSortedData
+    }
   });
 });
 
@@ -92,7 +92,7 @@ router.get("/hyperloop", (req, res) => {
     title: "Waterloop – Hyperloop",
     pageName: "hyperloop",
     pageParams: {
-      flock: flockJSON,
+      flock: flockJSON
     }
   });
 });
@@ -102,7 +102,7 @@ router.get("/team", (req, res) => {
     title: "Waterloop – Team",
     pageName: "team",
     pageParams: {
-      teamStructure: teamStructureJSON,
+      teamStructure: teamStructureJSON
     }
   });
 });
@@ -112,7 +112,7 @@ router.get("/sponsors", (req, res) => {
     title: "Waterloop – Sponsors",
     pageName: "sponsors",
     pageParams: {
-      sponsors: sponsorStructureJSON.sponsors,
+      sponsors: sponsorStructureJSON.sponsors
     }
   });
 });
@@ -121,7 +121,7 @@ router.get("/shop", (req, res) => {
   res.render("index", {
     title: "Waterloop – Shop",
     pageName: "shop",
-    pageParams: {},
+    pageParams: {}
   });
 });
 
@@ -129,7 +129,7 @@ router.get("/contact", (req, res) => {
   res.render("index", {
     title: "Waterloop – Contact",
     pageName: "contact",
-    pageParams: {},
+    pageParams: {}
   });
 });
 
@@ -141,7 +141,7 @@ router.get("*", (req, res) => {
   res.render("index", {
     title: "Waterloop – Canada's Hyperloop",
     pageName: "404",
-    pageParams: {},
+    pageParams: {}
   });
 });
 
@@ -150,12 +150,11 @@ router.post("/api/submitEmailForm", (req, res) => {
 
   wat_api.sendEmail(req.query, result => {
     if (result) {
-      res.status(200).json({ "message": "Email sent successfully" });
+      res.status(200).json({ message: "Email sent successfully" });
     } else {
-      res.status(500).json({ "message": "Error when sending email" });
+      res.status(500).json({ message: "Error when sending email" });
     }
   });
-
 });
 
 router.post("/api/submitSlackForm", (req, res) => {
@@ -163,12 +162,11 @@ router.post("/api/submitSlackForm", (req, res) => {
 
   wat_api.sendSlack(req.body, result => {
     if (result) {
-      res.status(200).json({ "message": "Slack sent successfully" });
+      res.status(200).json({ message: "Slack sent successfully" });
     } else {
-      res.status(500).json({ "message": "Error when sending message" });
+      res.status(500).json({ message: "Error when sending message" });
     }
   });
 });
-
 
 module.exports = router;
