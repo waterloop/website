@@ -105,18 +105,20 @@ module.exports = {
       "Lyka Pinlac": ""
     }
   },
-  Business: {
-    "Anton Chow": "Business Lead",
-    "Quinlin Wu": "Marketing Lead",
-    "Ariana Mayer": "Marketing Lead (mentor)",
-    "Prithika Hariharan": "",
-    "Huy Nguyen": ""
-  },
-  Infrastructure: {
-    "Yuvna Apajee": "",
-    "Christie Cho": "",
-    "Sadia Tashnuva": "",
-    "Ivan Lau": "",
-    "Nancy Situ": ""
+  Admin: {
+    Business: {
+      "Anton Chow": "Business Lead",
+      "Quinlin Wu": "Marketing Lead",
+      "Ariana Mayer": "Marketing Lead (mentor)",
+      "Prithika Hariharan": "",
+      "Huy Nguyen": ""
+    },
+    Infrastructure: {
+      "Yuvna Apajee": "",
+      "Christie Cho": "",
+      "Sadia Tashnuva": "",
+      "Ivan Lau": "",
+      "Nancy Situ": ""
+    }
   }
 };
