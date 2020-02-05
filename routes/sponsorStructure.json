@@ -1,40 +1,44 @@
 {
-    "sponsors" : [
-        {
-            "name" : "Hypersonic",
-            "itemsNum": 4,
-            "members" : [
-                "../images/sponsors/hypersonic/BrentsWeldingAndFab.png",
-                "../images/sponsors/hypersonic/UW_ENGINEERING_ENDOWMENT.png",
-                "../images/sponsors/hypersonic/UW_ENGINEERING_SOCIETY.png",
-                "../images/sponsors/hypersonic/UW_Engineering.png"
-            ]
-        },{
-            "name" : "Supersonic",
-            "itemsNum": 2,
-            "members" : [
-                "../images/sponsors/supersonic/ClickUp.png",
-                "../images/sponsors/supersonic/WCBranham.png"
-            ]
-        },{
-            "name" : "Transonic",
-            "itemsNum": 13,
-            "members" : [
-                "../images/sponsors/transonic/ANSYS.png",
-                "../images/sponsors/transonic/PSIM.png"
-            ]
-        },{
-            "name" : "Sonic",
-            "itemsNum": 12,
-            "members" : [
-                "../images/sponsors/sonic/AndersonPowerProducts.png",
-                "../images/sponsors/sonic/MITUTOYO.svg",
-                "../images/sponsors/sonic/3dx.svg",
-                "../images/sponsors/sonic/StarTechnology.png",
-                "../images/sponsors/sonic/L3Harris.jpg",
-                "../images/sponsors/sonic/WPrint.png",
-                "../images/sponsors/sonic/Wera.png"
-            ]
-        }
-    ]
+  "sponsors": [
+    {
+      "name": "Hypersonic",
+      "itemsNum": 4,
+      "members": [
+        "../images/sponsors/hypersonic/BrentsWeldingAndFab.png",
+        "../images/sponsors/hypersonic/UW_ENGINEERING_ENDOWMENT.png",
+        "../images/sponsors/hypersonic/UW_ENGINEERING_SOCIETY.png",
+        "../images/sponsors/hypersonic/UW_Engineering.png"
+      ]
+    },
+    {
+      "name": "Supersonic",
+      "itemsNum": 2,
+      "members": [
+        "../images/sponsors/supersonic/ClickUp.png",
+        "../images/sponsors/supersonic/WCBranham.png"
+      ]
+    },
+    {
+      "name": "Transonic",
+      "itemsNum": 13,
+      "members": [
+        "../images/sponsors/transonic/ANSYS.png",
+        "../images/sponsors/transonic/PSIM.png"
+      ]
+    },
+    {
+      "name": "Sonic",
+      "itemsNum": 12,
+      "members": [
+        "../images/sponsors/sonic/AndersonPowerProducts.png",
+        "../images/sponsors/sonic/MITUTOYO.svg",
+        "../images/sponsors/sonic/3dx.svg",
+        "../images/sponsors/sonic/StarTechnology.png",
+        "../images/sponsors/sonic/L3Harris.jpg",
+        "../images/sponsors/sonic/WPrint.png",
+        "../images/sponsors/sonic/Wera.png",
+        "../images/sponsors/sonic/OVERLEAF.png"
+      ]
+    }
+  ]
 }
