@@ -64,7 +64,7 @@ module.exports = {
       "Megan Tse": "",
       "George Yuan": "",
       "Kai Yuan Chi": "",
-      "Kevin": "",
+      "Kevin Bai": "",
       "Sergiu Pocol": "",
       "Jainish Mehta": "",
       "Tamim Khan": "",
