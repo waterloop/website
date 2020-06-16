@@ -119,15 +119,80 @@
   },
   {
     "name": "Goose III",
-    "thumbnail": "/images/flock/comingsoon.png",
+    "thumbnail": "/images/flock/goose3.png",
     "url": "goose_iii",
-    "desc": "",
-    "banner": "/images/flock/goose3/torontorender.jpg",
+    "desc": "The driving frontier.",
+    "banner": "/images/flock/goose3/g3-render.png",
     "sections": [
       {
+        "title": "Specifications",
         "content": [
-          "This is GOOSE III pod, the one that we are building in the next few terms to get ready for Competition III."
-        ]
+          "Our pod design process for Competition III began with the goal of building the fastest pod. Based purely on specific power and energy of lithium ion batteries (and perhaps supercapacitors), it is theoretically possible to achieve speeds above Mach 1 within the 1-mile Hyperloop test track. This pod is designed to achieve 100m/s, and we are gradually working towards higher and higher speeds for future competitions.",
+          "The prototype is about 0.5m (20\") wide, 2.7m (8.9') long, 0.8m (31.5\") tall, around 150 kg in weight, and can theoretically reach speeds at or above Mach 1 (1235km/h, or 343m/s)."
+        ],
+        "parallax": "/images/flock/goose3/g3-frame.png"
+      },
+      {
+        "title": "Shell",
+        "content": [
+          "Constructed out of fibreglass with a foam core for rigidity, the shell combines the efforts of all our subteam components into one cohesive whole. Separating the outer shell from the rest of the pod are rubber bushings to mitigate the effect of vibrations."
+        ],
+        "parallax": "/images/flock/goose3/g3-shell.png"
+      },
+      {
+        "title": "Propulsion",
+        "content": [
+          "The most challenging design yet, our propulsion system relies on a friction drive design to propel the pod forward. Using two rotating elements and a belt drive system, power is transferred from the motor to propel the pod along a surface safely and reliably. The friction drive design serves as a precursor to our Linear Induction Motor (LIM) design in later Goose pods."
+        ],
+        "parallax": "/images/flock/goose3/friction_rear.png"
+      },
+      {
+        "title": "Brakes",
+        "content": [
+          "With the constraint of 1.3 km of test track to work with comes the need to dissipate kinetic energy quickly. Our Eddy Current (EC) brakes work by inducing an eddy current in the web of the aluminum rail, creating opposing magnetic fields that work to brake the pod. They are also designed to counteract the stress produced by these potentially large forces."
+        ],
+        "parallax": "/images/flock/goose3/brakes.png"
+      },
+      {
+        "title": "Lateral Wheels",
+        "content": [
+          "Connecting the pod to the rails by the sides, these lateral wheels allow for a passive and lightweight lateral control system capable of supplying sufficient lateral forces to maintain stability."
+        ],
+        "parallax": "/images/flock/goose3/lateral-wheel.png"
+      },
+      {
+        "title": "Frame",
+        "content": [
+          "Similar to Goose II, we chose to use the ladder frame design with 2 L-beams connected by 4 I-beams. Improvements in the new frame design include a longer frame for the friction drive propulsion system and Eddy Current brakes, and a narrower frame to simplify component mounting and reduce torsional forces."
+        ],
+        "parallax": "/images/flock/goose3/frame-skeleton.png"
+      },
+      {
+        "title": "Electrical",
+        "content": [
+          "The nervous system of our pod, the electrical system connects the 24V and 567V powercells to the primitive sensors and motors installed throughout the pod. Arduino boards and Raspberry Pi's act as central hubs that interpret sensory data and control the flow of energy into each primitive module."
+        ],
+        "parallax": "/images/flock/goose3/electrical.png"
+      },
+      {
+        "title": "Embedded",
+        "content": [
+          "The embedded system serves as a bridge between the electrical system and the control system, and consists of three main components:",
+          "<ol><li>The Main Embedded Board (MEB) acts as the central hub for the Master Machines (i.e. 3 Raspberry Pi's),</li>",
+          "<li>The Hub Processing Boards (HPB) act as a data centralization point and interfaces with the MEB to deliver the data; an Arduino Mega is used as the implementation for the HPB, and</li>",
+          "<li>The Sensor and Control Hubs serve as efficient cable management and provide tools for low-level debugging. Three sensors are installed in the front, centre and rear of the pod.</li></ol>"
+        ],
+        "parallax": "/images/flock/goose3/embedded.png"
+      },
+      {
+        "title": "Control Systems",
+        "content": [
+          "Based on the Master-Slave design model for maximum redundancy and safety, the design is based on 3 components:",
+          "<ol><li>Embedded-systems is responsible for all of the pod's internal interactions with the sensors and various health checks.</li>",
+          "<li>Communication-systems is responsible for pod control and for transportation of information to the control-panel.</li>",
+          "<li>Front-end displays all vital readings from the pod and provides a control interface while the pod is in the tube.</li></ol>"
+        ],
+        "parallax": "/images/flock/goose3/control-systems.png"
       }
     ]
   },
@@ -136,7 +201,7 @@
     "thumbnail": "/images/flock/goosex.png",
     "url": "goose_v",
     "desc": "",
-    "banner": "/images/flock/goose3/torontorender.jpg",
+    "banner": "/images/flock/goose5/torontorender.jpg",
     "sections": [
       {
         "content": [
@@ -148,14 +213,14 @@
         "content": [
           "The exterior design of the pod highlights its primary design feature: the geodetic structural frame. The front end of the pod features a funnel like shape which would be used to collect the small amount of low pressure air in front of the train to eliminate air drag and supply air for the compressor which supplies the air castors. The matte black finish departs from contemporary transit imagery and signals in the new era of Hyperloop transit."
         ],
-        "parallax": "/images/flock/goose3/spherepod.jpg"
+        "parallax": "/images/flock/goose5/spherepod.jpg"
       },
       {
         "title": "Interior Design",
         "content": [
           "Due to cost efficiency, the diameter of the Hyperloop track must be kept as minimal as possible. For this reason, the pod design is kept as small as possible, and the curved geometry, white colour palette, and use of interior features resembling windows creates the illusion of a much bigger space"
         ],
-        "parallax": "/images/flock/goose3/innerpod.jpg"
+        "parallax": "/images/flock/goose5/innerpod.jpg"
       }
     ]
   }
