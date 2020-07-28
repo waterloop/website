@@ -127,7 +127,7 @@
       {
         "title": "Specifications",
         "content": [
-          "Our pod design process for Competition III began with the goal of building the fastest pod. Based purely on specific power and energy of lithium ion batteries (and perhaps supercapacitors), it is theoretically possible to achieve speeds above Mach 1 within the 1-mile Hyperloop test track. This pod is designed to achieve 100m/s, and we are gradually working towards higher and higher speeds for future competitions.",
+          "Our pod design process for Competition III began with the goal of building the fastest pod. Based purely on the power and energy of lithium ion batteries (and perhaps supercapacitors), the pod is theoretically capable of achieving speeds above Mach 1 within the 1-mile Hyperloop test track. Currently, this pod is designed to achieve 100m/s, although we are gradually working towards higher speeds for future competitions.",
           "The prototype is about 0.5m (20\") wide, 2.7m (8.9') long, 0.8m (31.5\") tall, around 150 kg in weight, and can theoretically reach speeds at or above Mach 1 (1235km/h, or 343m/s)."
         ],
         "parallax": "/images/flock/goose3/g3-frame.png"
@@ -135,7 +135,7 @@
       {
         "title": "Shell",
         "content": [
-          "Constructed out of fibreglass with a foam core for rigidity, the shell combines the efforts of all our subteam components into one cohesive whole. Separating the outer shell from the rest of the pod are rubber bushings to mitigate the effect of vibrations."
+          "Constructed out of fibreglass and a foam core for rigidity, the shell combines the efforts of all our subteam components into one cohesive whole. Separating the outer shell from the rest of the pod are rubber bushings to mitigate the effect of vibrations."
         ],
         "parallax": "/images/flock/goose3/g3-shell.png"
       },
@@ -149,7 +149,7 @@
       {
         "title": "Brakes",
         "content": [
-          "With the constraint of 1.3 km of test track to work with comes the need to dissipate kinetic energy quickly. Our Eddy Current (EC) brakes work by inducing an eddy current in the web of the aluminum rail, creating opposing magnetic fields that work to brake the pod. They are also designed to counteract the stress produced by these potentially large forces."
+          "Given the constraint of 1.3 km of test track, we had to create a braking system to dissipate kinetic energy quickly. Our Eddy Current (EC) brakes work by inducing an eddy current along the aluminum rail, creating opposing magnetic fields that slow the pod to a stop. They are also designed to counteract the stress produced by potentially large forces."
         ],
         "parallax": "/images/flock/goose3/brakes.png"
       },
@@ -170,7 +170,7 @@
       {
         "title": "Electrical",
         "content": [
-          "The nervous system of our pod, the electrical system connects the 24V and 567V powercells to the primitive sensors and motors installed throughout the pod. Arduino boards and Raspberry Pi's act as central hubs that interpret sensory data and control the flow of energy into each primitive module."
+          "Acting as the nervous system of our pod, the electrical system connects the 24V and 567V powercells to the primitive sensors and motors installed throughout the pod. Arduino boards and Raspberry Pis act as central hubs that interpret sensory data and control the flow of energy into each primitive module."
         ],
         "parallax": "/images/flock/goose3/electrical.png"
       },
@@ -187,7 +187,7 @@
       {
         "title": "Control Systems",
         "content": [
-          "Based on the Master-Slave design model for maximum redundancy and safety, the design is based on 3 components:",
+          "Using a Master-Slave design model for maximum redundancy and safety, the design is based on 3 components:",
           "<ol><li>Embedded-systems is responsible for all of the pod's internal interactions with the sensors and various health checks.</li>",
           "<li>Communication-systems is responsible for pod control and for transportation of information to the control-panel.</li>",
           "<li>Front-end displays all vital readings from the pod and provides a control interface while the pod is in the tube.</li></ol>"
@@ -213,7 +213,7 @@
       {
         "title": "Linear Induction Motor",
         "content": [
-          "A linear induction motor produces thrust through a linear force rather than through torque. This allows it to function on an unpowered conductive track, thereby saving costs in maintenance and per-unit track costs. Despite the disadvantage of end effects (or \"turbulence\") leading to lower speeds, the LIM offers contactless propulsion on a simpler track such as an aluminum one. Furthermore, the LIM allows for a centralized design that reduces the weight of the entire pod, and there are a variety of opportunities to scale up the LIM design and promises of better levitation technologies to use with the LIM."
+          "A linear induction motor produces thrust through a linear force rather than through torque. This allows it to function on an unpowered conductive track, thereby saving costs in maintenance and per-unit track costs. Despite the disadvantage of end effects (or \"turbulence\") leading to lower speeds, the LIM offers contactless propulsion on a simpler track such as an aluminum one. Furthermore, the LIM allows for a centralized design that reduces the weight of the entire pod. There are also a variety of opportunities to scale up the LIM design and promises of better levitation technologies to use with the LIM."
         ],
         "parallax": "/images/flock/goose4/lim.png"
       },
@@ -227,7 +227,7 @@
       {
         "title": "Braking",
         "content": [
-          "Consisting of a 4-bar parallelogram linkage, these push the braking pads against the vertical section of the I-beam rail through a pneumatic actuator (air compression). This results in an effective and scalable braking system that can easily bring the pod to a safe stop from a high speed."
+          "Consisting of a 4-bar parallelogram linkage, these push the braking pads against the vertical section of the I-beam rail through a pneumatic actuator (i.e. using air compression). This results in an effective and scalable braking system that can easily bring the pod to a safe stop from a high speed."
         ],
         "parallax": "/images/flock/goose4/braking.png"
       },
@@ -291,7 +291,7 @@
       {
         "title": "Specifications",
         "content": [
-          "GOOSE V is the result of refinining and optimizing GOOSE IV. We decided to expand upon the feasibility of Linear Induction Motors by incorporating it alongside a conservative, scalable and cost-effective subsystem design approach. More specifically, our team has gained tremendous insights from testing a small-scale LIM prototype, a high speed flywheel braking rig and a physial battery failure scenario.",
+          "GOOSE V is the result of refining and optimizing GOOSE IV. We decided to expand upon the feasibility of Linear Induction Motors by incorporating it alongside a conservative, scalable and cost-effective subsystem design approach. More specifically, our team has gained tremendous insights from testing a small-scale LIM prototype, a high speed flywheel braking rig and a physical battery failure scenario.",
           "The prototype is about 0.533m (21.68\") wide, 2.296m (7.5') long, 0.356m (14.76\") tall, around 82 kg in weight, and is designed to reach a safe and faster speed of 44m/s."
         ]
       },
@@ -312,8 +312,8 @@
       {
         "title": "Guidance",
         "content": [
-          "The guidance system maintains lateral and horizontal stability. It accounts for any variations or imperfections in the track that may induce vibrations and bump impulses to the vehicle, and ensures the pod stays on track without damage. The guidance system also ensures that the pod maintains consistent contact with the track, as the LIM and sensors are affected by even the smallest of deviations.",
-          "The system comprises of 2 parts. The top/bottom components constrain the pod's vertical movements with wheels above the top and underside surfaces of the track, with 4 dampers mounted to the chassis for support and articulation over bumps. The lateral components exist to maintain a minimum gap between the 2 LIMs on either side of the pod to ensure continuous and proper propulsion force, thus keeping the pod laterally and rotationally centred on the track."
+          "The guidance system maintains lateral and horizontal stability. It accounts for any variations or imperfections in the track that may induce vibrations and bump impulses to the vehicle, ensuring the pod stays on track without damage. The guidance system also ensures that the pod maintains consistent contact with the track, as the LIM and sensors are affected by even the smallest of deviations.",
+          "The system comprises of 2 parts. The top/bottom components constrain the pod's vertical movements with wheels above the top and underside surfaces of the track, with 4 dampers mounted to the chassis for support and articulation over bumps. The lateral components exist to maintain a minimum gap between the 2 LIMs on either side of the pod to ensure a continuous and proper propulsion force is applied, thus keeping the pod laterally and rotationally centred on the track."
         ],
         "parallax": "/images/flock/goose5/guidance.png"
       },
@@ -349,21 +349,21 @@
       {
         "title": "Embedded Sensors",
         "content": [
-          "The pod consists of an array of 32 sensors, with 11 unique models. A few examples of models would be the Piezo, which measures vibrations both at the wheel and frame level, and the Phototransitor that reads the RPM of the pod's wheels for calculating speed."
+          "The pod consists of an array of 32 sensors, with 11 unique models. A few examples of models would be the Piezo, which measures vibrations both at the wheel and frame level, and the Phototransistor that reads the RPM of the pod's wheels for calculating speed."
         ]
       },
       {
         "title": "Physical System Architecture: Communications",
         "content": [
           "There are 2 major components comprising the communications system:",
-          "<ul><li>The Networking and TCP component utilizes a Desktop Raspberry Pi. It facilitates relaying sensor data from the sensors to the desktop dashboard to be displayed, and to send commands from the remote desktop dashboard back to the pod.</li>",
+          "<ul><li>The Networking and TCP component utilizes a Desktop Raspberry Pi. It relays sensor data from the sensors to the desktop dashboard to be displayed, and it sends commands from the remote desktop dashboard back to the pod.</li>",
           "<li>The CAN Bus connects a Raspberry Pi with Arduinos/Sensors. It serves as a cost-effective way of transmitting data between the devices with minimal interference from other subsystems in the pod.</li></ul>"
         ]
       },
       {
         "title": "User Interface: Dashboard",
         "content": [
-          "Developed using QT Designer, QML and C++, the desktop system's dashboard displays sensor data about the pod's performance and provides a platform to control the pod remotely. The dashboard is organized in containers, where each container displays information regarding similar sensor data in an easily interpreted fashion. Gauges show the danger levels associated with a reading, and are thus used extensively. The colour warnings and indicators are designed to easily stand out to the user, thereby warning them to take action more effectively.",
+          "Developed using QT Designer, QML and C++, the desktop system's dashboard displays sensor data about the pod's performance and provides a platform to control the pod remotely. The dashboard is organized in containers, where each container displays information regarding similar sensor data in an easily interpreted fashion. Gauges show the danger levels associated with a reading and are used extensively. The colour warnings and indicators are designed to easily stand out to the user, thereby warning them to take action more effectively.",
           "As the final link in starting the execution of the pod run, the pod starts when the user presses the \"start\" button, after which all subsequent operations are autonomous. However, the user has the option to enter \"Manual Mode\", where the user can then activate brakes and control the LIM operating frequency."
         ],
         "parallax": "/images/flock/goose5/dashboard.png"
