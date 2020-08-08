@@ -119,28 +119,267 @@
   },
   {
     "name": "Goose III",
-    "thumbnail": "/images/flock/comingsoon.png",
+    "thumbnail": "/images/flock/goose3.png",
     "url": "goose_iii",
-    "desc": "",
-    "banner": "/images/flock/goose3/torontorender.jpg",
+    "desc": "The driving frontier.",
+    "banner": "/images/flock/goose3/g3-render.png",
     "sections": [
       {
+        "title": "Specifications",
         "content": [
-          "This is GOOSE III pod, the one that we are building in the next few terms to get ready for Competition III."
+          "Our pod design process for Competition III began with the goal of building the fastest pod. Based purely on the power and energy of lithium ion batteries (and perhaps supercapacitors), the pod is theoretically capable of achieving speeds above Mach 1 within the 1-mile Hyperloop test track. Currently, this pod is designed to achieve 100m/s, although we are gradually working towards higher speeds for future competitions.",
+          "The prototype is about 0.5m (20\") wide, 2.7m (8.9') long, 0.8m (31.5\") tall, around 150 kg in weight, and can theoretically reach speeds at or above Mach 1 (1235km/h, or 343m/s)."
+        ],
+        "parallax": "/images/flock/goose3/g3-frame.png"
+      },
+      {
+        "title": "Shell",
+        "content": [
+          "Constructed out of fibreglass and a foam core for rigidity, the shell combines the efforts of all our subteam components into one cohesive whole. Separating the outer shell from the rest of the pod are rubber bushings to mitigate the effect of vibrations."
+        ],
+        "parallax": "/images/flock/goose3/g3-shell.png"
+      },
+      {
+        "title": "Propulsion",
+        "content": [
+          "The most challenging design yet, our propulsion system relies on a friction drive design to propel the pod forward. Using two rotating elements and a belt drive system, power is transferred from the motor to propel the pod along a surface safely and reliably. The friction drive design serves as a precursor to our Linear Induction Motor (LIM) design in later Goose pods."
+        ],
+        "parallax": "/images/flock/goose3/friction_rear.png"
+      },
+      {
+        "title": "Brakes",
+        "content": [
+          "Given the constraint of 1.3 km of test track, we had to create a braking system to dissipate kinetic energy quickly. Our Eddy Current (EC) brakes work by inducing an eddy current along the aluminum rail, creating opposing magnetic fields that slow the pod to a stop. They are also designed to counteract the stress produced by potentially large forces."
+        ],
+        "parallax": "/images/flock/goose3/brakes.png"
+      },
+      {
+        "title": "Lateral Wheels",
+        "content": [
+          "Connecting the pod to the rails by the sides, these lateral wheels allow for a passive and lightweight lateral control system capable of supplying sufficient lateral forces to maintain stability."
+        ],
+        "parallax": "/images/flock/goose3/lateral-wheel.png"
+      },
+      {
+        "title": "Frame",
+        "content": [
+          "Similar to Goose II, we chose to use the ladder frame design with 2 L-beams connected by 4 I-beams. Improvements in the new frame design include a longer frame for the friction drive propulsion system and Eddy Current brakes, and a narrower frame to simplify component mounting and reduce torsional forces."
+        ],
+        "parallax": "/images/flock/goose3/frame-skeleton.png"
+      },
+      {
+        "title": "Electrical",
+        "content": [
+          "Acting as the nervous system of our pod, the electrical system connects the 24V and 567V powercells to the primitive sensors and motors installed throughout the pod. Arduino boards and Raspberry Pis act as central hubs that interpret sensory data and control the flow of energy into each primitive module."
+        ],
+        "parallax": "/images/flock/goose3/electrical.png"
+      },
+      {
+        "title": "Embedded",
+        "content": [
+          "The embedded system serves as a bridge between the electrical system and the control system, and consists of three main components:",
+          "<ol><li>The Main Embedded Board (MEB) acts as the central hub for the Master Machines (i.e. 3 Raspberry Pi's),</li>",
+          "<li>The Hub Processing Boards (HPB) act as a data centralization point and interfaces with the MEB to deliver the data; an Arduino Mega is used as the implementation for the HPB, and</li>",
+          "<li>The Sensor and Control Hubs serve as efficient cable management and provide tools for low-level debugging. Three sensors are installed in the front, centre and rear of the pod.</li></ol>"
+        ],
+        "parallax": "/images/flock/goose3/embedded.png"
+      },
+      {
+        "title": "Control Systems",
+        "content": [
+          "Using a Master-Slave design model for maximum redundancy and safety, the design is based on 3 components:",
+          "<ol><li>Embedded-systems is responsible for all of the pod's internal interactions with the sensors and various health checks.</li>",
+          "<li>Communication-systems is responsible for pod control and for transportation of information to the control-panel.</li>",
+          "<li>Front-end displays all vital readings from the pod and provides a control interface while the pod is in the tube.</li></ol>"
+        ],
+        "parallax": "/images/flock/goose3/control-systems.png"
+      }
+    ]
+  },
+  {
+    "name": "Goose IV",
+    "thumbnail": "/images/flock/goose4.png",
+    "url": "goose_iv",
+    "desc": "Destination forward.",
+    "banner": "/images/flock/goose4/banner.png",
+    "sections": [
+      { 
+        "title": "Specifications",
+        "content": [
+          "For GOOSE IV, we chose to dip our feet into the world of Linear Induction Motors by incorporating them into a conservative, safety-focused and low-cost subsystem design. GOOSE IV will become a stepping stone to GOOSE V, where we will be incorporating a fully contactless system alongside the LIM.",
+          "The prototype is about 0.4m (15.75\") wide, 2.0m (6.56') long, 0.4m (15.75\") tall, around 81.7 kg in weight, and is designed to reach a safe and slightly faster speed of 44m/s."
+        ]
+      },
+      {
+        "title": "Linear Induction Motor",
+        "content": [
+          "A linear induction motor produces thrust through a linear force rather than through torque. This allows it to function on an unpowered conductive track, thereby saving costs in maintenance and per-unit track costs. Despite the disadvantage of end effects (or \"turbulence\") leading to lower speeds, the LIM offers contactless propulsion on a simpler track such as an aluminum one. Furthermore, the LIM allows for a centralized design that reduces the weight of the entire pod. There are also a variety of opportunities to scale up the LIM design and promises of better levitation technologies to use with the LIM."
+        ],
+        "parallax": "/images/flock/goose4/lim.png"
+      },
+      {
+        "title": "Low Speed Drive",
+        "content": [
+          "Similar to the landing gear of an airplane, the low speed drive system serves as a fail-safe propulsion mechanism and a way to taxi the pod. Designed to operate at a speed of 3 m/s, the system consists of an electric hub motor that can be raised to reduce frictional force at higher speeds and lowered to safely drive the pod to the end of the track."
+        ],
+        "parallax": "/images/flock/goose4/low-speed-drive.png"
+      },
+      {
+        "title": "Braking",
+        "content": [
+          "Consisting of a 4-bar parallelogram linkage, these push the braking pads against the vertical section of the I-beam rail through a pneumatic actuator (i.e. using air compression). This results in an effective and scalable braking system that can easily bring the pod to a safe stop from a high speed."
+        ],
+        "parallax": "/images/flock/goose4/braking.png"
+      },
+      {
+        "title": "Pneumatic Systems",
+        "content": [
+          "Used by the Low Speed Drive and Braking systems, the pneumatic system applies the brakes for deceleration and also controls the Low Speed Drive for taxiing and as a fail-safe, with both systems being independent of each other."
+        ],
+        "parallax": "/images/flock/goose4/pneumatic-system.png"
+      },
+      {
+        "title": "Frame",
+        "content": [
+          "As the main structural component of the GOOSE IV pod, the frame supports all other subsytems in a fixed position and transfers the overall propulsion force to the entire pod. Weighing only 9 kg, the frame is designed to withstand all acceleration, braking, vibration and structural loads during the run."
+        ],
+        "parallax": "/images/flock/goose4/frame.png"
+      },
+      {
+        "title": "Shell",
+        "content": [
+          "Designed with the focus on aesthetics, mass and aerodynamics, and inspired by the F-117 bomber, our smoked polycarbonate shell covers the entire pod while still allowing for its individual components to be shown and easily tweaked. Our GOOSE IV shell was also designed to stand out, with ample space to display our logo as well as promotional material."
+        ],
+        "parallax": "/images/flock/goose4/g4-shell.png"
+      },
+      {
+        "title": "Guidance",
+        "content": [
+          "Guiding the pod along the track, the guidance system provides lateral stability (so the pod doesn't tilt to one side) and controls vertical suspension. This system is split into the front and back of the pod, with the front holding the pod up and absorbing shocks from the track, and the back preventing the pod from derailing."
+        ],
+        "parallax": "/images/flock/goose4/guidance.png"
+      },
+      {
+        "title": "Power",
+        "content": [
+          "The power system comprises of 2 parts: High Voltage system (HV), and Low Voltage system (LV). The HV system powers the linear induction motor, while the LV system powers all other components on the pod. An enclosure is used to insulate the batteries used in the 2 systems, and a Battery Management system ensures that consistent and stable power is provided to the pod."
+        ],
+        "parallax": "/images/flock/goose4/power.png"
+      },
+      {
+        "title": "Motor Control and Inverter",
+        "content": [
+          "The primary way of controlling the operating speed of the Linear Induction Motor (LIM) is to use an inverter to adjust the AC output frequency to the LIM using the DC battery power supply. The controller is used to ensure a stable power output from the non-constant three-phase AC loead from the LIM, while also accounting for the end effects (or \"turbulence\") produced by the LIM."
+        ],
+        "parallax": "/images/flock/goose4/motor-and-inverter.png"
+      },
+      {
+        "title": "Software and Embedded",
+        "content": [
+          "Designed with modularity and minimalism as a focus, the Software and Embedded team incorporates redundant and inexpensive devices that work together to control the pod. Multiple Raspberry Pis are used to aggregate data, communicate with the Arduinos through the CAN bus system and perform other complex tasks."
         ]
       }
     ]
   },
   {
     "name": "Goose V",
-    "thumbnail": "/images/flock/goosex.png",
+    "thumbnail": "/images/flock/goose5.png",
     "url": "goose_v",
+    "desc": "UnLIMited potential.",
+    "banner": "/images/flock/goosex/torontorender.jpg",
+    "sections": [
+      {
+        "title": "Specifications",
+        "content": [
+          "GOOSE V is the result of refining and optimizing GOOSE IV. We decided to expand upon the feasibility of Linear Induction Motors by incorporating it alongside a conservative, scalable and cost-effective subsystem design approach. More specifically, our team has gained tremendous insights from testing a small-scale LIM prototype, a high speed flywheel braking rig and a physical battery failure scenario.",
+          "The prototype is about 0.533m (21.68\") wide, 2.296m (7.5') long, 0.356m (14.76\") tall, around 82 kg in weight, and is designed to reach a safe and faster speed of 44m/s."
+        ]
+      },
+      {
+        "title": "Linear Induction Motor",
+        "content": [
+          "Like a Rotary Induction Motor but cut up on its centre axis and with the stator and rotor unrolled flat, a linear induction motor produces thrust through a linear force rather than through torque. This allows it to function on an unpowered conductive track, thereby saving costs in maintenance and per-unit track costs. Despite the disadvantage of end effects (or \"turbulence\") leading to lower speeds, the LIM offers contactless propulsion on a simpler track such as an aluminum one. Furthermore, the LIM allows for a centralized design that reduces the weight of the entire pod, and there are a variety of opportunities to scale up the LIM design and promises of better levitation technologies to use with the LIM. We use the DLIM (or Double-sided LIM) design, which involves 2 LIMs on either side of the I-beam track, to allow for a stronger magnetic field to be maintained."
+        ],
+        "parallax": "/images/flock/goose5/DLIM_Render.png"
+      },
+      {
+        "title": "Frame",
+        "content": [
+          "The main structural component of the pod, the frame houses all of the pod's mechanical and electrical subsytems. Made from 6061-T6 square aluminum tubing, the frame is welded in a truss structure and weighs 10 kg. The material and construction of the frame is designed to withstand all acceleration, braking, vibration and structural loads during the run."
+        ],
+        "parallax": "/images/flock/goose5/FRAME_DESIGN .JPG"
+      },
+      {
+        "title": "Guidance",
+        "content": [
+          "The guidance system maintains lateral and horizontal stability. It accounts for any variations or imperfections in the track that may induce vibrations and bump impulses to the vehicle, ensuring the pod stays on track without damage. The guidance system also ensures that the pod maintains consistent contact with the track, as the LIM and sensors are affected by even the smallest of deviations.",
+          "The system comprises of 2 parts. The top/bottom components constrain the pod's vertical movements with wheels above the top and underside surfaces of the track, with 4 dampers mounted to the chassis for support and articulation over bumps. The lateral components exist to maintain a minimum gap between the 2 LIMs on either side of the pod to ensure a continuous and proper propulsion force is applied, thus keeping the pod laterally and rotationally centred on the track."
+        ],
+        "parallax": "/images/flock/goose5/guidance.png"
+      },
+      {
+        "title": "Braking",
+        "content": [
+          "The brakes are designed to slow the pod to a stop, whether the pod has reached its top speed, experienced a failure or to hold the pod stationary on the rail when powered off.",
+          "For Competition V, we used industry-leading Hyperloop-spec brakes produced by W.C. Branham in the USA. The brakes use coiled springs to apply the friction pads to the rail, and they are bolted to the frame with a support plate to ensure a robust mechanical system. The brakes are placed at the front and rear of the pod to maximize stopping force."
+        ],
+        "parallax": "/images/flock/goose5/brakes.png"
+      },
+      {
+        "title": "Shell",
+        "content": [
+          "The shell provides an external layer to the pod that decreases turbulence and stops foreign debris from entering the inner components. The shell design balances minimal manufacturing complexity and cost with aesthetical aspects for branding and promotional material."
+        ],
+        "parallax": "/images/flock/goose5/g5-shell.png"
+      },
+      {
+        "title": "Motor Controller",
+        "content": [
+          "The motor controller ultimately controls the Linear Induction Motors, and is split into 2 main portions: the power board, and the control board. The power board produces the 3-phase AC needed to power the LIM. This is achieved through the use of a IGBT 3-phase inverter. The control board acts as a medium between the power board and the microcontroller. Multiple systems are also used as sensors and protectors of the boards."
+        ],
+        "parallax": "/images/flock/goose5/motor-controller-schematics.png"
+      },
+      {
+        "title": "Battery and Battery Management",
+        "content": [
+          "The battery management system (BMS) is used to monitor and balance the cell array used to power the Linear Induction Motors and low voltage systems. The lithium ion cells experience multiple charge and discharge cycles, thus they will degrade if improperly managed without the BMS. The BMS also utilizes passive cell balancing to ensure that all batteries in the stack are evenly charged, thereby prolonging cell life and maintaining healthy charge levels."
+        ],
+        "parallax": "/images/flock/goose5/battery.png"
+      },
+      {
+        "title": "Embedded Sensors",
+        "content": [
+          "The pod consists of an array of 32 sensors, with 11 unique models. A few examples of models would be the Piezo, which measures vibrations both at the wheel and frame level, and the Phototransistor that reads the RPM of the pod's wheels for calculating speed."
+        ]
+      },
+      {
+        "title": "Physical System Architecture: Communications",
+        "content": [
+          "There are 2 major components comprising the communications system:",
+          "<ul><li>The Networking and TCP component utilizes a Desktop Raspberry Pi. It relays sensor data from the sensors to the desktop dashboard to be displayed, and it sends commands from the remote desktop dashboard back to the pod.</li>",
+          "<li>The CAN Bus connects a Raspberry Pi with Arduinos/Sensors. It serves as a cost-effective way of transmitting data between the devices with minimal interference from other subsystems in the pod.</li></ul>"
+        ]
+      },
+      {
+        "title": "User Interface: Dashboard",
+        "content": [
+          "Developed using QT Designer, QML and C++, the desktop system's dashboard displays sensor data about the pod's performance and provides a platform to control the pod remotely. The dashboard is organized in containers, where each container displays information regarding similar sensor data in an easily interpreted fashion. Gauges show the danger levels associated with a reading and are used extensively. The colour warnings and indicators are designed to easily stand out to the user, thereby warning them to take action more effectively.",
+          "As the final link in starting the execution of the pod run, the pod starts when the user presses the \"start\" button, after which all subsequent operations are autonomous. However, the user has the option to enter \"Manual Mode\", where the user can then activate brakes and control the LIM operating frequency."
+        ],
+        "parallax": "/images/flock/goose5/dashboard.png"
+      }
+    ]
+  },
+  {
+    "name": "Goose X",
+    "thumbnail": "/images/flock/goosex.png",
+    "url": "goose_x",
     "desc": "",
-    "banner": "/images/flock/goose3/torontorender.jpg",
+    "banner": "/images/flock/goosex/torontorender.jpg",
     "sections": [
       {
         "content": [
-          "This is our GOOSE V pod, a conceptual full size Hyperloop vehicle inspired by the prototype we are building. The full size pod will have a capacity of 26 passengers per pod, interior diameter of 2 meters, top speed around 1220 km/h and cost around $500,000 per pod."
+          "This is our GOOSE X pod, a conceptual full size Hyperloop vehicle inspired by the prototype we are building. The full size pod will have a capacity of 26 passengers per pod, interior diameter of 2 meters, top speed around 1220 km/h and cost around $500,000 per pod."
         ]
       },
       {
@@ -148,14 +387,14 @@
         "content": [
           "The exterior design of the pod highlights its primary design feature: the geodetic structural frame. The front end of the pod features a funnel like shape which would be used to collect the small amount of low pressure air in front of the train to eliminate air drag and supply air for the compressor which supplies the air castors. The matte black finish departs from contemporary transit imagery and signals in the new era of Hyperloop transit."
         ],
-        "parallax": "/images/flock/goose3/spherepod.jpg"
+        "parallax": "/images/flock/goosex/spherepod.jpg"
       },
       {
         "title": "Interior Design",
         "content": [
           "Due to cost efficiency, the diameter of the Hyperloop track must be kept as minimal as possible. For this reason, the pod design is kept as small as possible, and the curved geometry, white colour palette, and use of interior features resembling windows creates the illusion of a much bigger space"
         ],
-        "parallax": "/images/flock/goose3/innerpod.jpg"
+        "parallax": "/images/flock/goosex/innerpod.jpg"
       }
     ]
   }
