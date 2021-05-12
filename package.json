@@ -46,7 +46,7 @@
     "eslint-plugin-script-tags": "^0.5.0",
     "glob": "^7.1.2",
     "htmllint": "^0.7.0",
-    "nodemailer": "^4.4.2",
+    "nodemailer": "^6.4.16",
     "nodemon": "^1.19.4",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0"
