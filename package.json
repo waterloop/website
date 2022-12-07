@@ -21,7 +21,7 @@
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "es6": "0.0.7",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-minify": "^1.0.0",
     "favicon": "0.0.2",
     "google-auth-library": "^0.12.0",
